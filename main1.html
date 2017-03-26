@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- your webpage info goes here -->
+
+    <title>My First Website</title>
+	
+	<meta name="author" content="your name" />
+	<meta name="description" content="" />
+
+	<script src="jquery-3.1.1.min"></script>
+
+	<style>
+		p{ line-height: 1em; }
+h1, h2, h3, h4{
+    color: #336E7B;
+	font-weight: normal;
+	line-height: 1.1em;
+	margin: 0 0 .5em 0;
+}
+h1{ font-size: 1.7em; }
+h2{ font-size: 1.5em; }
+a{
+	color: black;
+	text-decoration: none;
+}
+	a:hover,
+	a:active{ text-decoration: underline; }
+
+/* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */
+
+body{
+    font-family: arial; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
+}
+/* you can put your code all in one line like above */
+#page{ margin: 20px; }
+
+/* or on different lines like below */
+#logo{
+	width: 35%;
+	margin-top: 5px;
+	font-family: georgia;
+	display: inline-block;
+}
+/* but try and be as concise as possible */
+#nav{
+	width: 60%;
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
+	#nav ul{}
+		#nav ul li{
+			display: inline-block;
+			height: 62px;
+		}
+			#nav ul li a{
+				padding: 20px;
+				background:#336E7B;
+				color: white;
+			}
+			#nav ul li a:hover{
+				background-color: #ffb424;
+				box-shadow: 0px 1px 1px #666;
+			}
+			#nav ul li a:active{ background-color: #ff8f00; }
+
+#content{
+	/*margin: 30px 0;*/
+	margin-left: 10%; 
+	margin-right: 10%;
+	background: white;
+	padding: 20px;
+	clear: both;
+}
+#footer{
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 10px;
+}
+	#footer p{
+		text-align: right;
+		text-transform: uppercase;
+		font-size: 80%;
+		color: grey;
+	}
+
+/* multiple styles seperated by a , */
+#content,
+ul li a{ box-shadow: 0px 1px 1px #999; }
+
+	input,select,button{
+				padding: 5px 8px;
+				margin: 4px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				box-sizing: border-box;
+			}
+	
+			input[type=text]{
+				width:20%;
+			}
+
+			input[type=submit] {
+				background-color: #1E90FF;
+				color: white;
+				padding: 5px 8px;
+				margin: 4px 0;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			#go:hover{
+				background-color: orange;
+			}
+
+			blockquote{
+				margin-left:20%;
+				margin-right:20%;
+		    	padding: 10px;
+			    background-color:#FFF8DC;
+		    	border-left: 2px solid black;
+			}
+			p{
+				font-size: 100%;
+				word-spacing: 5px;
+			}
+			#dv
+			{
+				margin-left: 10%; 
+				margin-right: 10%;
+			}
+	}
+	</style>
+	
+</head>
+<body>
+
+<script>
+			$(document).ready(function(){
+				$("input").focus(function(){
+					$(this).css("background-color" , "lightgrey");
+				});
+				$("input").blur(function(){
+					$(this).css("background-color" , "white");
+				});
+			});
+		</script>
+
+<!-- webpage content goes here in the body -->
+
+	<div id="page">
+
+		<div id="logo">
+			<table>
+				<td><img src="rsz_ccoi_logo_which_is_too_big-e1471604207392.png" width="180" height="80"></td>
+				<td><h1><a href="/" id="logoLink">What's The CRIME?</a></h1></td>
+			</table>
+		</div>
+
+		<div id="nav">
+			<ul>
+				<li><a href="#/home.html">Home</a></li>
+				<li><a href="#/about.html">About</a></li>
+				<li><a href="#/contact.html">Contact</a></li>
+			</ul>	
+		</div>
+
+		<br>
+		<br>
+
+		<center>
+		<div style="background:#336E7B"; id="dv">
+			<form action="" method="POST">
+				<input type="text" name="crime" class="crime" id="crime" placeholder="Eg:murder" />
+				<input type="submit" name="submit" value="Search" id="go" />
+			</form>
+		</div>
+		</center>
+
+		<div id="content">
+			<h2>Penal Codes</h2>
+			<center>
+				<blockquote align="center">
+						<h2>
+							<span style="color:#9999;">
+								<strong>
+									<span">Indian Penal Code</span>
+								</strong>
+							</span>
+						</h2>
+					</blockquote>
+			</center>
+			<p>
+				The Indian security system has been one that has gone through a lot of tests and examinations throughout the time. This is due to the political as well as the social situation and standing of the country. India is a land of diverse cultures and traditions. It is a place where people from various religions as well as ethnic backgrounds live together. As a result of these, there might arise certain disputes amongst the people. The cultural diversity is such that there are disputes and clashes of interest between different states, ethnic to particular cultural consortiums. There are also many intrusions from neighboring countries and terrorist organizations.Then, there is the issue of the Naxalites as well as the day to day common crimes. To counter all such crimes and breach of law, a document has been formulated, that covers each of these situations separately and lists out the penalties for those found guilty under any of the mentioned offences. This is document is known as the Indian Penal Code. The Indian penal code is also applicable to the state of Jammu and Kashmir.However, it was known in this state as the Ranbir Penal Code (RPC).
+			</p>
+			<p> 
+				The Indian Penal code, in its basic form, is a document that lists all the cases and punishments that a person committing any crimes is liable to be charged with. It covers any Indian citizen or a person of Indian origin. The exception here is that any kind of military or the armed forces crimes can not be charged based on the Indian Penal Code. Military as well as the armed forces have a different dedicated list of laws and the Indian Penal Code does not have the privilege to supersede any part of it. The Indian Penal Code also has the power to charge for any crimes committed by a person who is an Indian citizen on any means of transport belonging to India-an Indian aircraft or an Indian ship.
+			</p>
+			<p>
+				The Indian Penal Code has its roots I the times of the British rule in India. It is known to have originated from a British legislation account in it’s colonial conquests, dating back to the year 1860.The first and the introductory draft of the Indian Penal Code was formulated in 1860s and was done under the able supervision of the First Law Comission.The commission was righteously chaired by Lord Macaulay. The first penal code came into existence way back in the year 1862.Since then, a lot of amendments have been made to it in order to incorporate a lot of changes and jurisdiction clauses. One such amendment is the inclusions of section 498-A.The total number of sections contained in the Indian Penal Code are five hundred eleven. All these sections pertain to a particular category of crimes committed by civilians of Indian origin. There are sections related to Dowry Laws and jurisdictions in India, as well as there are several sections that concern various types of criminal laws. The Indian Penal Code is thus the most fundamental document of all the law enforcer as well as the entire judiciary in India.
+			</p>
+			<br>
+			<center>
+				<blockquote align="center">
+						<h2>
+							<span style="color:#9999;">
+								<strong>
+									<span">Code of Criminal Procedure</span>
+								</strong>
+							</span>
+						</h2>
+					</blockquote>
+			</center>
+			<p>
+				The Code of Criminal Procedure (CrPC ) is the main legislation on procedure for administration of substantive criminal law in India.It was enacted in 1973 and came into force on 1 April 1974.It provides the machinery for the investigation of crime, apprehension of suspected criminals, collection of evidence, determination of guilt or innocence of the accused person and the determination of punishment of the guilty. Additionally, it also deals with public nuisance, prevention of offences and maintenance of wife, child and parents.At present, the Act contains 484 Sections, 2 Schedules and 56 Forms. The Sections are divided into 37 Chapters.
+			</p>
+		</div>
+
+
+		<div id="footer">
+			<p>
+				Webpage made by <a href="/" target="_blank">[Gurpreet Singh]</a>
+			</p>
+		</div>
+
+	</div>
+</body>
+</html>
